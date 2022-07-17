@@ -1,1 +1,1 @@
-# NVIM LUA CONFIG
+# Neovim Lua Configuration Repository
