@@ -13,6 +13,7 @@ local servers = {
   "jsonls",
   "sumneko_lua",
   "tsserver",
+  "tailwindcss",
 }
 
 lsp_installer.setup({
