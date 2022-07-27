@@ -11,6 +11,7 @@ local servers = {
   "emmet_ls",
   "html",
   "jsonls",
+  "pyright",
   "sumneko_lua",
   "tsserver",
   "tailwindcss",
