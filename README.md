@@ -1,16 +1,15 @@
 # Neovim Lua Configuration Repository
 
 ### Prerequisites
-Package manager: brew
-Font: firacode-nerd-font
+Package manager: **brew**
 
-Terminal:
-  Linux: default
-  MacOs: iTerm2
+Font: **firacode-nerd-font**
 
-Terminal Customization: zsh, oh-my-zsh
+Terminal: Linux[**default**], MacOs[**iTerm2**]
 
-Terminal Multiplexer: tmux
+Terminal Customization: **zsh**, **oh-my-zsh**
+
+Terminal Multiplexer: **tmux**
 
 ### .zshrc config for Linux
 ```
