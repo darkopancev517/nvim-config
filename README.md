@@ -5,17 +5,15 @@ Package manager: **brew**
 
 Font: **firacode-nerd-font**
 
-Terminal: Linux[**default**], MacOs[**iTerm2**]
-
-Terminal Customization: **zsh**, **oh-my-zsh**
-
-Terminal Multiplexer: **tmux**
+Terminal application: Linux[**default**], MacOs[**iTerm2**]
+Terminal customization: **zsh**, **oh-my-zsh**
+Terminal multiplexer: **tmux**
+Terminal tools: **lazygit** (use by toogleterm)
+Terminal tools (optional): htop, ncdu, node, python (use by toogleterm)
 
 Live Grep: **rg** (this is use for find text in telescope plugin)
 
-TOOLS: **lazygit** (this use by toogleterm)
-
-OPTIONAL TOOLS: htop, ncdu, node, python (this use by toogleterm)
+Syntax Highlighting: prettier, black, stylua
 
 ### .zshrc config for Linux
 ```
@@ -28,7 +26,7 @@ BREW_INC_PATH=/home/linuxbrew/.linuxbrew/include
 export PATH=$BREW_BIN_PATH:$BREW_LIB_PATH:$BREW_OPT_PATH:$BREW_INC_PATH:$PATH
 ```
 
-### .tmux.conf config file for Linux
+### .tmux.conf config file for Linux or MacOS
 ```
 # Fixed colorscheme problem
 set -ga terminal-overrides ",*256col*:Tc"
@@ -40,12 +38,14 @@ set-window-option -g mode-keys vi
 set-option -sg escape-time 10
 ```
 
-### Install
+### Install for Linux or MacOs
 
+```
 Clone this repository: git clone git@github.com:darkopancev517/nvim-config.git .config/nvim
 
 Install Location: ~/.config/nvim
+```
 
 ### Troubleshooting
 
-run `:checkhealth` to see plugin dependencies problem, make sure there is no **ERROR**
+run `:checkhealth` to see plugin dependencies or others problem, make sure there is no **ERROR**
