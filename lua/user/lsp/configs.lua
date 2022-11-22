@@ -5,6 +5,8 @@ end
 
 local lspconfig = require("lspconfig")
 
+-- Note: don't install ccls from nvim-lsp-installer, install from brew instead
+
 local servers = {
   "ccls",
   "cssls",
@@ -18,8 +20,20 @@ local servers = {
   "tailwindcss",
 }
 
+local install_servers = {
+  "cssls",
+  "cssmodules_ls",
+  "emmet_ls",
+  "html",
+  "jsonls",
+  "pyright",
+  "sumneko_lua",
+  "tsserver",
+  "tailwindcss",
+}
+
 lsp_installer.setup({
-  ensure_installed = servers,
+  ensure_installed = install_servers,
 })
 
 for _, server in pairs(servers) do
