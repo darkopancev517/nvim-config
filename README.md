@@ -11,6 +11,12 @@ Terminal Customization: **zsh**, **oh-my-zsh**
 
 Terminal Multiplexer: **tmux**
 
+Live Grep: **rg** (this is use for find text in telescope plugin)
+
+TOOLS: **lazygit** (this use by toogleterm)
+
+OPTIONAL TOOLS: htop, ncdu, node, python (this use by toogleterm)
+
 ### .zshrc config for Linux
 ```
 # Add brew related path to here
@@ -29,6 +35,9 @@ set -ga terminal-overrides ",*256col*:Tc"
 
 # Use vi key mode
 set-window-option -g mode-keys vi
+
+# Recommended by nvim: checkhealth
+set-option -sg escape-time 10
 ```
 
 ### Install
@@ -36,3 +45,7 @@ set-window-option -g mode-keys vi
 Clone this repository: git clone git@github.com:darkopancev517/nvim-config.git .config/nvim
 
 Install Location: ~/.config/nvim
+
+### Troubleshooting
+
+run `:checkhealth` to see plugin dependencies problem, make sure there is no **ERROR**
