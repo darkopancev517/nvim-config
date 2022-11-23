@@ -1,7 +1,11 @@
 # Neovim Lua Configuration Repository
 
 ### Prerequisites
+Linux: sudo-apt-get install git gcc curl build-essential
+
 Package manager: **brew**
+
+BREW: brew install cmake gcc
 
 Font: **firacode-nerd-font**
 
