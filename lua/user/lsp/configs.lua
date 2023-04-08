@@ -1,23 +1,25 @@
-local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
-if not status_ok then
+local mason_ok, mason = pcall(require, "mason")
+if not mason_ok then
+  return
+end
+
+local mason_lspconfig_ok, mason_lspconfig = pcall(require, "mason-lspconfig")
+if not mason_lspconfig_ok then
   return
 end
 
 local lspconfig = require("lspconfig")
 
--- Note: don't install ccls from nvim-lsp-installer, install from brew instead
-
 local servers = {
-  "ccls",
   "cssls",
   "cssmodules_ls",
   "emmet_ls",
   "html",
   "jsonls",
+  "lua_ls",
   "pyright",
-  "sumneko_lua",
-  "tsserver",
   "tailwindcss",
+  "tsserver",
 }
 
 local install_servers = {
@@ -26,13 +28,14 @@ local install_servers = {
   "emmet_ls",
   "html",
   "jsonls",
+  "lua_ls",
   "pyright",
-  "sumneko_lua",
-  "tsserver",
   "tailwindcss",
+  "tsserver",
 }
 
-lsp_installer.setup({
+mason.setup()
+mason_lspconfig.setup({
   ensure_installed = install_servers,
 })
 
