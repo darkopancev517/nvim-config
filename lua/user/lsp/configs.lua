@@ -12,6 +12,7 @@ local lspconfig = require("lspconfig")
 
 local servers = {
   "ccls",
+  "cmake",
   "cssls",
   "cssmodules_ls",
   "emmet_ls",
@@ -24,6 +25,7 @@ local servers = {
 }
 
 local install_servers = {
+  "cmake",
   "cssls",
   "cssmodules_ls",
   "emmet_ls",
