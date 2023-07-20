@@ -79,3 +79,23 @@ Install Location: ~/.config/nvim
 ### Troubleshooting
 
 run `:checkhealth` to see plugin dependencies or others problem, make sure there is no **ERROR**
+
+### Install the fonts
+
+Linux font directories are in `/usr/share/fonts`, `~/.local/share/fonts`, or `/usr/local/share/fonts`.
+
+Move your font binaries to the destination directory.
+
+```
+cp fonts/JetBrainsMonoNF/*.ttf /usr/share/fonts
+```
+
+Note: JetBrainsMonoNF have all the icons for nvim-tree.
+
+After that clear and regenerate your font cache:
+
+```
+fc-cache -f -v
+```
+
+Note: You may need to restart your terminal after this command to make the fonts work.
