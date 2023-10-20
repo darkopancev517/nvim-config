@@ -71,4 +71,6 @@ vim.g.indent_blankline_context_patterns = {
   -- },
 -- }
 
-require("ibl").setup()
+require("ibl").setup {
+  scope = { enabled = false }
+}
