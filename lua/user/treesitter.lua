@@ -28,10 +28,10 @@ configs.setup {
     enable = true,
   },
   indent = { enable = true, disable = { "python", "css", "rust" } },
-  context_commentstring = {
-    enable = true,
-    enable_autocmd = false,
-  },
+  -- context_commentstring = {
+    -- enable = true,
+    -- enable_autocmd = false,
+  -- },
   autotag = {
     enable = true,
     disable = { "xml", "markdown" },
