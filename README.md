@@ -1,7 +1,7 @@
 # Neovim Lua Configuration Repository
 
 ### Prerequisites
-Linux: sudo-apt-get install git gcc curl build-essential
+Linux: sudo-apt-get install git gcc curl build-essential zsh
 
 Package manager: **brew**
 
@@ -63,6 +63,8 @@ set -g @plugin 'dracula/tmux'
 set -g @dracula-show-powerline true
 set -g @dracula-show-flags true
 set -g @dracula-show-left-icon session
+
+# Note: inside tmux press "Prefix (Ctrl + b) + I" to install the plugins
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 run '~/.tmux/plugins/tpm/tpm'
