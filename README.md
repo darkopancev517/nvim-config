@@ -60,6 +60,8 @@ set -g @plugin 'tmux-plugins/tpm'
 set -g @plugin 'dracula/tmux'
 
 # Dracula tmux plugin configuration
+set -g @dracula-plugins "battery weather time"
+set -g @dracula-battery-label "Battery"
 set -g @dracula-show-powerline true
 set -g @dracula-show-flags true
 set -g @dracula-show-left-icon session
