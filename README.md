@@ -43,6 +43,7 @@ unbind r
 bind r source-file ~/.tmux.conf
 
 # Fixed colorscheme problem
+set -g default-terminal "tmux-256color"
 set -ga terminal-overrides ",*256col*:Tc"
 
 # Use vi key mode
