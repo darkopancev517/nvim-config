@@ -90,7 +90,7 @@ return packer.startup(function(use)
 	use "nvimtools/none-ls.nvim"
 
   -- Highlight
-  use "RRethy/vim-illuminate" -- Automatically highlighting other use of the current  word under the cursor
+  -- use "RRethy/vim-illuminate" -- Automatically highlighting other use of the current  word under the cursor
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

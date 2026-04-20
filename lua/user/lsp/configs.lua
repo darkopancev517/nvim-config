@@ -18,7 +18,7 @@ local servers = {
 	"lua_ls",
 	"pyright",
 	"tailwindcss",
-	"ts_ls",
+  "vtsls",
 }
 
 local install_servers = {
@@ -30,7 +30,7 @@ local install_servers = {
 	"lua_ls",
 	"pyright",
 	"tailwindcss",
-	"ts_ls",
+  "vtsls",
 }
 
 mason.setup()
@@ -48,5 +48,4 @@ for _, server in pairs(servers) do
 		opts = vim.tbl_deep_extend("force", opts, server_custom_opts)
 	end
   vim.lsp.config(server, opts)
-  vim.lsp.enable(server)
 end
