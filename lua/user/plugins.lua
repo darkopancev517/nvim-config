@@ -87,7 +87,7 @@ return packer.startup(function(use)
   }
 
   use "williamboman/mason-lspconfig.nvim"
-	use "jose-elias-alvarez/null-ls.nvim"
+	use "nvimtools/none-ls.nvim"
 
   -- Highlight
   use "RRethy/vim-illuminate" -- Automatically highlighting other use of the current  word under the cursor

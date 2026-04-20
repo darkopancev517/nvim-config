@@ -8,7 +8,7 @@ if not mason_lspconfig_ok then
   return
 end
 
-local lspconfig = require("lspconfig")
+-- local lspconfig = require("lspconfig")
 
 local servers = {
   "ccls",
@@ -21,7 +21,7 @@ local servers = {
   "lua_ls",
   "pyright",
   "tailwindcss",
-  "tsserver",
+  "ts_ls",
 }
 
 local install_servers = {
@@ -34,7 +34,7 @@ local install_servers = {
   "lua_ls",
   "pyright",
   "tailwindcss",
-  "tsserver",
+  "ts_ls",
 }
 
 mason.setup()
@@ -42,14 +42,14 @@ mason_lspconfig.setup({
   ensure_installed = install_servers,
 })
 
-for _, server in pairs(servers) do
-  local opts = {
-    on_attach = require("user.lsp.handlers").on_attach,
-    capabilities = require("user.lsp.handlers").capabilities,
-  }
-  local has_custom_opts, server_custom_opts = pcall(require, "user.lsp.settings." .. server)
-  if has_custom_opts then
-    opts = vim.tbl_deep_extend("force", opts, server_custom_opts)
-  end
-  lspconfig[server].setup(opts)
-end
+-- for _, server in pairs(servers) do
+  -- local opts = {
+    -- on_attach = require("user.lsp.handlers").on_attach,
+    -- capabilities = require("user.lsp.handlers").capabilities,
+  -- }
+  -- local has_custom_opts, server_custom_opts = pcall(require, "user.lsp.settings." .. server)
+  -- if has_custom_opts then
+    -- opts = vim.tbl_deep_extend("force", opts, server_custom_opts)
+  -- end
+  -- lspconfig[server].setup(opts)
+-- end
